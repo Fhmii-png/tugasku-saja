@@ -1,24 +1,24 @@
-.h1{
+.h1 {
     color: #5A3E1B;
     font-family: Arial, sans-serif;
     font-style: italic;
     align-content: center;
 }
 
-.atas{
-  background-color: #EBCFA9;
-  padding: 18px 24px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  box-shadow: 0 4px 0 #B8956A;
-  box-sizing: border-box;
-  margin-left: 5px; 
+.atas {
+    background-color: #EBCFA9;
+    padding: 18px 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 4px 0 #B8956A;
+    box-sizing: border-box;
+    margin-left: 5px;
 }
 
-.judul-cekdata{
+.judul-cekdata {
     font-size: 25px;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -26,58 +26,61 @@
     color: #5A3E1B;
 }
 
-.kotak{
+.kotak {
+    position: relative;
     margin-left: 102px;
+    background-color: #BEBEBE;
+    width: 500px;
+    min-height: 260px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px #7A7A7A;
+
+    /* ruang untuk foto di kiri */
+    padding: 20px 20px 20px 140px;
+
     display: flex;
     flex-direction: column;
-    background-color: #BEBEBE;
-    align-items: center;
-    height: 400px;
-    width: 500px;
-    border-radius: 12px;
-    gap: 5px;
-    padding-top : 40px;
-    padding-left: 70px;
-    box-shadow: 2px 4px 4px #7A7A7A;
-}
-
-.baris{
-    display: grid;
-    grid-template-columns: 160px 1fr;
-    align-items: center;
-}
-
-.label{
-    font-weight: bold;
     gap: 10px;
 }
 
-.titik{
-    font-weight: bold;
-}
-
-.gambar{
-    margin-top: -130px;
-    margin-left: -380px;
-    width: 146px;
-    height: 166px;
-}
-
-.baris2{
-    margin-left: -340px;
-    
+/* BARIS DATA */
+.baris {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 170px 1fr;
     align-items: center;
+    font-size: 14px;
 }
 
-.label2{
+/* LABEL */
+.label {
     font-weight: bold;
+    color: #333;
+}
+
+/* ISI */
+.titik {
+    font-weight: bold;
+    color: #222;
+}
+
+/* FOTO */
+.gambar {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+    height: auto;
+}
+
+/* INPUT EDIT */
+.edit-input {
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+/* TOMBOL AKSI */
+.kotak>div[style*="justify-content: flex-end"] {
     margin-top: 10px;
 }
-
-.titik2{
-    font-weight: bold;
-    margin-top: 10px;
-}
-

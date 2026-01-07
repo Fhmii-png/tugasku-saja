@@ -1,20 +1,36 @@
-.button-edit {
-  background-color: transparent;
-  margin-top: 40px;
-  color: #52381E;
-  font-size: 20px;
-  font-family: 'arial', sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  padding: 12px 20px; 
-  border-radius: 12px;
-  cursor: pointer;
-  margin-bottom: 20px;  
-  border: 2px solid #937454;
-  margin-left: 472px;
+.tomboledit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* KANAN */
+  padding-right: 30px;
+  margin-top: 20px;
 }
 
-.button-edit:hover{
-    background-color: #937453a7;
+.button-edit {
+  background-color: transparent;
+  color: #52381E;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid #937454;
+  cursor: pointer;
+
+  /* POSISI */
+  align-self: flex-end;
+  /* ke kanan */
+  margin-top: auto;
+  /* ke bawah */
+  margin-bottom: 20px;
+
+  transition: all 0.2s ease;
+}
+
+.button-edit:hover {
+  background-color: #937453a7;
   padding-left: 25px;
 }

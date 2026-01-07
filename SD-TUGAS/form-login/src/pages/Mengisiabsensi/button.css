@@ -1,7 +1,13 @@
+.simpan {
+  display: flex;
+  justify-content: flex-end;
+  /* ⬅️ ke kanan */
+  margin-top: 20px;
+  /* ⬅️ ke bawah */
+}
+
 .simpan1 {
-  position: absolute;
-  bottom: 28px;
-  right: 24px;
+  align-self: flex-end;
 
   background-color: transparent;
   color: #52381E;
@@ -17,9 +23,9 @@
 
 
 .simpan1:hover {
-  background-color: #866848e5; 
-  border-color: #937454; 
-  padding-left: 25px; 
+  background-color: #866848e5;
+  border-color: #937454;
+  padding-left: 25px;
 }
 
 .logout1 {
@@ -30,14 +36,14 @@
   font-family: 'arial', sans-serif;
   font-style: italic;
   font-weight: bold;
-  padding: 12px 20px; 
+  padding: 12px 20px;
   border-radius: 12px;
   cursor: pointer;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   border: 2px solid #937454;
 }
 
-.logout:hover{
-    background-color: #937453a7;
+.logout:hover {
+  background-color: #937453a7;
   padding-left: 25px;
 }

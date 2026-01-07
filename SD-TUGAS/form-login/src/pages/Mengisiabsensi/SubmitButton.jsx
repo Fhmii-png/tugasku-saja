@@ -1,12 +1,12 @@
 import "./button.css";
 
-function Submitbutton () {
-    function tombolsubmit () {
-        alert ('Absensi Berhasil disimpan');
+function Submitbutton() {
+    function tombolsubmit() {
+        alert('Absensi Berhasil disimpan');
     }
     return (
-        <div>
-            <button class = "simpan1" type = "submit" onClick = {tombolsubmit}>
+        <div className="simpan">
+            <button class="simpan1" type="submit" onClick={tombolsubmit}>
                 Simpan Absensi</button>
         </div>
     );

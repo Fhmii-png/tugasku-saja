@@ -50,7 +50,7 @@ export default function RegisterForm({ onSwitchToLogin }) {
     setIsLoading(true);
     try {
       // Panggil API register
-      await authAPI.register(formData.email, formData.password, formData.namaLengkap, formData.role);
+      await authAPI.register(formData.email, formData.password, formData.namaLengkap, formData.nohandphone, formData.role);
 
       setSuccess('Pendaftaran Berhasil! Silahkan login menggunakan akun Anda.');
 

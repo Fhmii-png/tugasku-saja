@@ -97,57 +97,58 @@ function TabelK() {
           </button>
         </form>
       </div>
+      <div className="absensi-p">
+        <table className="absensi-table1">
+          <thead>
+            <tr>
+              <th width="50">No</th>
+              <th>Nama Santri</th>
+              <th width="250">Kehadiran</th>
+              <th width="100">Aksi</th>
+            </tr>
+          </thead>
 
-      <table className="absensi-table1">
-        <thead>
-          <tr>
-            <th width="50">No</th>
-            <th>Nama Santri</th>
-            <th width="250">Kehadiran</th>
-            <th width="100">Aksi</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {data.length === 0 ? (
-            <tr><td colSpan="4" style={{ textAlign: "center", padding: "20px" }}>Belum ada data santri</td></tr>
-          ) : (
-            data.map((row, index) => {
-              const studentId = row.nim || row.id;
-              return (
-                <tr key={studentId}>
-                  <td style={{ textAlign: "center", fontWeight: "bold" }}>{index + 1}</td>
-                  <td style={{ textAlign: "left" }}>{row.nama}</td>
-                  <td>
-                    <div className="attendance-options" style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
-                      {['Hadir', 'Izin', 'Alfa'].map((status) => (
-                        <label key={status} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", fontSize: "14px" }}>
-                          <input
-                            type="radio"
-                            name={`attendance-${studentId}`}
-                            value={status}
-                            checked={attendance[studentId] === status}
-                            onChange={() => handleAttendanceChange(studentId, status)}
-                          />
-                          {status}
-                        </label>
-                      ))}
-                    </div>
-                  </td>
-                  <td>
-                    <button
-                      onClick={() => handleDelete(studentId)}
-                      style={{ background: "#e74c3c", color: "white", border: "none", padding: "6px 12px", borderRadius: "4px", cursor: "pointer", fontSize: "12px" }}
-                    >
-                      Hapus
-                    </button>
-                  </td>
-                </tr>
-              );
-            })
-          )}
-        </tbody>
-      </table>
+          <tbody>
+            {data.length === 0 ? (
+              <tr><td colSpan="4" style={{ textAlign: "center", padding: "20px" }}>Belum ada data santri</td></tr>
+            ) : (
+              data.map((row, index) => {
+                const studentId = row.nim || row.id;
+                return (
+                  <tr key={studentId}>
+                    <td style={{ textAlign: "center", fontWeight: "bold" }}>{index + 1}</td>
+                    <td style={{ textAlign: "left" }}>{row.nama}</td>
+                    <td>
+                      <div className="attendance-options" style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
+                        {['Hadir', 'Izin', 'Alfa'].map((status) => (
+                          <label key={status} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", fontSize: "14px" }}>
+                            <input
+                              type="radio"
+                              name={`attendance-${studentId}`}
+                              value={status}
+                              checked={attendance[studentId] === status}
+                              onChange={() => handleAttendanceChange(studentId, status)}
+                            />
+                            {status}
+                          </label>
+                        ))}
+                      </div>
+                    </td>
+                    <td>
+                      <button
+                        onClick={() => handleDelete(studentId)}
+                        style={{ background: "#e74c3c", color: "white", border: "none", padding: "6px 12px", borderRadius: "4px", cursor: "pointer", fontSize: "12px" }}
+                      >
+                        Hapus
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

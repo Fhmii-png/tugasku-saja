@@ -1,5 +1,5 @@
 .dashboard-layoutr {
-  display: flex; /* Sidebar di kiri, Konten di kanan */
+  display: flex;
   min-height: 100vh;
   width: 100%;
 }
@@ -13,4 +13,54 @@
   margin-top: -10px;
 }
 
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  width: 100%;
+}
 
+.stat-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.stat-box:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.stat-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stat-title.total {
+  color: #2c3e50;
+}
+
+.stat-title.hadir {
+  color: #27ae60;
+}
+
+.stat-title.izin {
+  color: #f39c12;
+}
+
+.stat-title.alfa {
+  color: #e74c3c;
+}
+
+.stat-title.belum {
+  color: #95a5a6;
+}

@@ -51,10 +51,10 @@ export const authAPI = {
    * Menerima items: email, password, name
    * Backend perlu: namaLengkap, email, password
    */
-  register: (email, password, namaLengkap, role = 'murid') =>
+  register: (email, password, namaLengkap, nohandphone, role = 'murid') =>
     fetchAPI('/register', {
       method: 'POST',
-      body: JSON.stringify({ email, password, namaLengkap, role, username: email.split('@')[0] })
+      body: JSON.stringify({ email, password, namaLengkap, nohandphone, role, username: email.split('@')[0] })
     }),
 
   /**

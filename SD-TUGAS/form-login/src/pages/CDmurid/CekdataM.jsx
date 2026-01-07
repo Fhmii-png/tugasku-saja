@@ -137,7 +137,7 @@ function CekdataM({ userRole }) {
             return (
               <div className="kotak" key={studentId} style={{ marginBottom: '20px', position: 'relative', borderLeft: isEditing ? '5px solid #27ae60' : 'none' }}>
                 <div className="baris">
-                  <span className="label" style={{ color: '#27ae60', fontWeight: 'bold' }}>No. Urut</span>
+                  <span className="label" style={{ fontWeight: 'bold' }}>No. Urut</span>
                   <span className="titik">: {index + 1}</span>
                 </div>
 

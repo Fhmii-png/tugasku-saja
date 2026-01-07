@@ -55,20 +55,48 @@ function RekapAbsensi({ setDashboardPage }) {
       <div className="filter-container">
         <h2 className="filter-title" style={{ textAlign: 'center', marginBottom: '10px' }}>Laporan Rekap Absensi Santri</h2>
 
-        <div className="stats-summary" style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          marginBottom: '20px',
-          padding: '15px',
-          background: 'white',
-          borderRadius: '12px',
-          boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-        }}>
-          <div style={{ textAlign: 'center' }}><div style={{ color: '#2c3e50', fontWeight: 'bold' }}>Total</div><div style={{ fontSize: '20px' }}>{stats.total}</div></div>
-          <div style={{ textAlign: 'center' }}><div style={{ color: '#27ae60', fontWeight: 'bold' }}>Hadir</div><div style={{ fontSize: '20px' }}>{stats.hadir}</div></div>
-          <div style={{ textAlign: 'center' }}><div style={{ color: '#f39c12', fontWeight: 'bold' }}>Izin</div><div style={{ fontSize: '20px' }}>{stats.izin}</div></div>
-          <div style={{ textAlign: 'center' }}><div style={{ color: '#e74c3c', fontWeight: 'bold' }}>Alfa</div><div style={{ fontSize: '20px' }}>{stats.alfa}</div></div>
-          <div style={{ textAlign: 'center' }}><div style={{ color: '#95a5a6', fontWeight: 'bold' }}>Belum</div><div style={{ fontSize: '20px' }}>{stats.belumAbsen}</div></div>
+        <div
+          className="stats-summary"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginBottom: '20px',
+            padding: '15px',
+            background: 'white',
+            borderRadius: '12px',
+            boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+            maxWidth: '1100px',
+            margin: '0 auto',
+          }}
+        >
+          <div className="stats-container">
+            <div className="stat-box">
+              <div className="stat-title total">Total</div>
+              <div className="stat-value">{stats.total}</div>
+            </div>
+
+            <div className="stat-box">
+              <div className="stat-title hadir">Hadir</div>
+              <div className="stat-value">{stats.hadir}</div>
+            </div>
+
+            <div className="stat-box">
+              <div className="stat-title izin">Izin</div>
+              <div className="stat-value">{stats.izin}</div>
+            </div>
+
+            <div className="stat-box">
+              <div className="stat-title alfa">Alfa</div>
+              <div className="stat-value">{stats.alfa}</div>
+            </div>
+
+            <div className="stat-box">
+              <div className="stat-title belum">Belum</div>
+              <div className="stat-value">{stats.belumAbsen}</div>
+            </div>
+          </div>
+
+
         </div>
 
         <Rekap students={filteredStudents} />

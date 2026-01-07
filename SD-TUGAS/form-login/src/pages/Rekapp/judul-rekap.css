@@ -1,5 +1,5 @@
 .judul3 {
-  background-color: #EBCFA9;
+  background-color: #000000;
   padding: 18px 24px;
   border-radius: 12px;
 
@@ -9,7 +9,8 @@
   height: 100px;
   box-shadow: 0 4px 0 #B8956A;
   box-sizing: border-box;
-  margin-left: 5px; /* 334px sidebar + 20px jarak */
+  margin-left: 5px;
+  /* 334px sidebar + 20px jarak */
 }
 
 
@@ -19,7 +20,7 @@
   font-family: Arial, sans-serif;
   font-style: italic;
   color: #5A3E1B;
- 
+
 }
 
 .judul3 span {
