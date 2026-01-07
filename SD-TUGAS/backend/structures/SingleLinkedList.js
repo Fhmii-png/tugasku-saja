@@ -26,8 +26,7 @@ class SingleLinkedList {
         this.size++;
     }
 
-    // Menghapus data berdasarkan kriteria (misal ID atau NIM)
-    // Asumsi data adalah object dengan properti 'id' atau 'nim'
+    // Menghapus data berdasarkan ID
     remove(id) {
         let current = this.head;
         let prev = null;
@@ -58,13 +57,10 @@ class SingleLinkedList {
         }
         return result;
     }
-
-    // Update data berdasarkan ID
     update(id, newData) {
         let current = this.head;
         while (current) {
             if (current.data.id === id || current.data.nim === id) {
-                // Merge data lama dengan data baru
                 current.data = { ...current.data, ...newData };
                 return current.data;
             }
