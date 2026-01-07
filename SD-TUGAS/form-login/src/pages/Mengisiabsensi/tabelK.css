@@ -1,0 +1,50 @@
+.absensi-box1 {
+  background: linear-gradient(#E4E2E1,#DDDCDB,#D5D5D5);
+  width: 100%;
+
+  margin: 66px auto 0; /* ⬅️ tengah & jarak atas */
+  padding: 0;
+
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+}
+
+.absensi-table1 {
+  border-radius: 14px;
+  overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.absensi-table1 th {
+  background-color: #D5AA73;
+  color: #FFFFFF;
+
+  padding: 20px;
+font-family: 'arial',sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  text-align: left;
+}
+
+.absensi-table1 td {
+  font-size: 16px;
+  padding: 16px;
+  font-family: 'arial',sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.status-select {
+  padding: 6px;
+  border-radius: 8px;
+  /* border-color: #666666; */
+  border: 2px solid;
+  
+}
+
+
+

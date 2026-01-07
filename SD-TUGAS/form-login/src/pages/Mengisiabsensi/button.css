@@ -1,0 +1,43 @@
+.simpan1 {
+  position: absolute;
+  bottom: 28px;
+  right: 24px;
+
+  background-color: transparent;
+  color: #52381E;
+  font-size: 1.25rem;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: 2px solid #937454;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+.simpan1:hover {
+  background-color: #866848e5; 
+  border-color: #937454; 
+  padding-left: 25px; 
+}
+
+.logout1 {
+  background-color: transparent;
+  margin-top: auto;
+  color: #52381E;
+  font-size: 20px;
+  font-family: 'arial', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 12px 20px; 
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;  
+  border: 2px solid #937454;
+}
+
+.logout:hover{
+    background-color: #937453a7;
+  padding-left: 25px;
+}

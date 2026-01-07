@@ -1,0 +1,23 @@
+.absensi-box {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  margin-left: calc(334px + auto);
+}
+
+.absensi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.absensi-table th,
+.absensi-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.absensi-table input,
+.absensi-table select {
+  width: 100%;
+  padding: 6px;
+}

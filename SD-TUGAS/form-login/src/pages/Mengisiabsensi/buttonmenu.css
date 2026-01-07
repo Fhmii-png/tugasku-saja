@@ -1,0 +1,26 @@
+.menubutton{
+  background-color: transparent;
+  display: block;
+  color: #52381E;
+  font-style: italic;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 2px solid #937454;
+  border-radius: 19px;
+  margin: 10px;
+  font-size: 20px;
+  width: 220px;
+  text-align: center;
+}
+
+.menubutton:hover {
+  background-color: #937453a7;
+  padding-left: 25px;
+}
+
+.menubutton.active {
+  background: #80552a;
+  color: #fff;
+  border-radius: 19px;
+}

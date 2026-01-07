@@ -1,0 +1,83 @@
+.h1{
+    color: #5A3E1B;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    align-content: center;
+}
+
+.atas{
+  background-color: #EBCFA9;
+  padding: 18px 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0 4px 0 #B8956A;
+  box-sizing: border-box;
+  margin-left: 5px; 
+}
+
+.judul-cekdata{
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #5A3E1B;
+}
+
+.kotak{
+    margin-left: 102px;
+    display: flex;
+    flex-direction: column;
+    background-color: #BEBEBE;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    border-radius: 12px;
+    gap: 5px;
+    padding-top : 40px;
+    padding-left: 70px;
+    box-shadow: 2px 4px 4px #7A7A7A;
+}
+
+.baris{
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+}
+
+.label{
+    font-weight: bold;
+    gap: 10px;
+}
+
+.titik{
+    font-weight: bold;
+}
+
+.gambar{
+    margin-top: -130px;
+    margin-left: -380px;
+    width: 146px;
+    height: 166px;
+}
+
+.baris2{
+    margin-left: -340px;
+    
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+}
+
+.label2{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.titik2{
+    font-weight: bold;
+    margin-top: 10px;
+}
+

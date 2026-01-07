@@ -1,0 +1,146 @@
+/* Main Container */
+.filter-container1 {
+  background: linear-gradient(to bottom, #d4a574 0%, #d4a574 60px, #e8dac3 60px, #e8dac3 100%);
+  padding: 0;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  /* max-width: 650px; */
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+/* Header Title */
+.filter-title1 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #5a3a1a;
+  margin: 0;
+  padding: 20px 24px;
+  font-style: italic;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 24px 16px 24px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border: 2px solid #999;
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.stat-label {
+  color: #000000;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-blue {
+  color: #3b82f6;
+}
+
+.stat-yellow {
+  color: #eab308;
+}
+
+.stat-green {
+  color: #22c55e;
+}
+
+.stat-red {
+  color: #ef4444;
+}
+
+/* Presentasi Card */
+.presentasi-card {
+  background-color: #ffffff;
+  border: 2px solid #999;
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+  margin: 0 24px 20px 24px;
+  /* max-width: 140px; */
+}
+
+/* Table Container */
+.table-container {
+  margin: 0 24px 24px 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TABLE */
+.rekap-table1 {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.rekap-table1 th {
+  background: linear-gradient(to right, #5a8bb7, #4a7ba7);
+  color: #ffffff;
+  padding: 12px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+  font-size: 13px;
+  border: none;
+}
+
+.rekap-table1 td {
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rekap-table1 tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.rekap-table1 tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.rekap-table1 tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Styling */
+.status {
+  font-weight: 600;
+}
+
+.status-hadir {
+  color: #3b82f6;
+}
+
+.status-sakit {
+  color: #22c55e;
+}
+
+.status-izin {
+  color: #eab308;
+}
+
+/* Hidden elements for this design */
+.filter-label1,
+.filter-controls1 {
+  display: none;
+}
